@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+    <span ><a mat-icon-button routerLink="dashboard" style="font-weight:bold; font-size: 30px">EMS</a></span>
+  
+    
+    <span class="example-spacer"></span>
+    <a *ngIf="loggedIn" routerLink="employees" routerLinkActive="active" class="nav-link">Employee List</a>
+    <a *ngIf="loggedIn" routerLink="create-employee" routerLinkActive="active" class="nav-link"style="margin-left:10px ;" >Add Employee</a>
+    <a *ngIf="!loggedIn"  class="nav-link" routerLink="/login">Login</a>
+    
+    <a *ngIf="loggedIn" (click)="logoutUser()" class="nav-link"  style="margin-left:10px ; cursor: pointer;">Logout</a>
+
+</mat-toolbar>

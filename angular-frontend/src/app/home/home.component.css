@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+h1{
+    font-family: 'Silkscreen',cursive;
+    font-size: 35px;
+}
+
+.tt{
+    padding-top: 30px;
+}
